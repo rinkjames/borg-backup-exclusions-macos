@@ -12,6 +12,10 @@
 
 # N.B. Other directories will be ignored if a file '.nobackup' is present and '--exclude-if-present .nobackup' is used
 
+# ALL caches
+! **Cache**
+! **cache**
+
 # Cache items that will be rebuilt by the machine
 ! **/.build/
 ! **/.cache/
@@ -41,6 +45,7 @@
 
 ## These seem to be related to macOS ML caching
 ! **/Library/Trial
+! **/Users/*/Library/Application Support/coreMLCache
 
 ## Bluetooth
 ! **/Library/com.apple.bluetooth.services.cloud/CachedRecords/
@@ -55,6 +60,9 @@
 ! **/.DS_Store
 ! **/Library/Metadata
 ! **/Library/Metadata/CoreSpotlight/index.spotlightV3/
+! **/desktop.ini
+! **/Icon?
+! **/.localized
 
 # Volume specific preferences
 ! **/.metadata_never_index
@@ -94,6 +102,7 @@
 ! **/.Trash/
 ! **/.trashes/
 ! **/.Trashes/
+! **/$RECYCLE.BIN
 
 # Logs and Monitoring
 - **/Logs/
@@ -106,6 +115,8 @@
 ! **/.TemporaryItems
 ! **/tmp/
 ! /var/tmp/
+! **/*Temp*
+! **/*temp*
 
 # macOS installation files
 ## These are large and don't need to be restored
@@ -144,6 +155,14 @@
 - /run/
 - /sys/
 - /var/backups/
+
+# icloud libraries
+! **/Users/*/Music/Music/Music Library.musiclibrary
+! **/Users/*/Pictures/Photos Library.photoslibrary
+! **/Library/**/Mobile Documents
+
+# cloud storage
+! **/Users/*/Library/CloudStorage
 
 ##################################
 # Exclusions up for discussion	 #

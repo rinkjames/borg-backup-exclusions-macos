@@ -41,9 +41,29 @@
 
 # Microsoft office
 ! **/Microsoft/FontPreviewCache
+! **/~$*
 
 # Spotify
 ! **/Spotify/PersistentCache
+
+# Zotero
+! **/Users/*/Zotero/storage
+
+# Crossover
+! **/Users/*/Library/Application Support/CrossOver/Bottles/
+! **/Users/*/Applications/Crossover
+
+$ Parallels
+! **/Users/*/Applications (Parallels)
+! **/Users/*/Parallels
+! **/Users/*/Library/Parallels/Downloads
+
+# R renv library
+! **/renv/library/
+! **/renv/local/
+! **/renv/lock/
+! **/renv/python/
+! **/renv/staging/
 
 # Up for discussion
 # ! **/.dropbox*
