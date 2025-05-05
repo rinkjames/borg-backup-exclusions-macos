@@ -67,20 +67,23 @@
 ! **/renv/staging
 
 # Arc browser caches
-! **/Users/*/Library/Application Support/Arc/**Cache*
-! **/Users/*/Library/Application Support/Arc/**cache*
+! **/Users/*/Library/Application Support/Arc/**/*Cache*
+! **/Users/*/Library/Application Support/Arc/**/*cache*
 
 # Adobe caches
-! **/Users/*/Library/Application Support/Adobe/**Cache*
-! **/Users/*/Library/Application Support/Adobe/**cache*
+! **/Users/*/Library/Application Support/Adobe/**/*Cache*
+! **/Users/*/Library/Application Support/Adobe/**/*cache*
 
 # SPSS caches
-! **/Users/*/Library/Application Support/IBM/**Cache*
-! **/Users/*/Library/Application Support/IBM/**cache*
+! **/Users/*/Library/Application Support/IBM/**/*Cache*
+! **/Users/*/Library/Application Support/IBM/**/*cache*
 
 # vscode caches
-! **/Users/*/Library/Application Support/Code/**Cache*
-! **/Users/*/Library/Application Support/Code/**cache*
+! **/Users/*/Library/Application Support/Code/**/*Cache*
+! **/Users/*/Library/Application Support/Code/**/*cache*
+
+# whatsapp
+! **/Users/*/Library/Group Containers/*whatsapp*
 
 # Up for discussion
 # ! **/.dropbox*

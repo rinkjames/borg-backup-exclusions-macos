@@ -13,8 +13,8 @@
 # N.B. Other directories will be ignored if a file '.nobackup' is present and '--exclude-if-present .nobackup' is used
 
 # # ALL caches
-# ! **Cache**
-# ! **cache**
+# ! **/*Cache*
+# ! **/*cache*
 
 # Cache items that will be rebuilt by the machine
 ! **/.build/
@@ -67,9 +67,9 @@
 ! **/extensions_crx_cache
 ! **/ScriptCache
 ! **/NickNameCache
-! **/Library/DuetExpertCenter/**Cache*
-! **/Library/Metadata/**Cache*
-! **/Library/Metadata/**cache*
+! **/Library/DuetExpertCenter/**/*Cache*
+! **/Library/Metadata/**/*Cache*
+! **/Library/Metadata/**/*cache*
 
 # Metadata
 ! **/.DS_Store

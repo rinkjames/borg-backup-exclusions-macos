@@ -13,8 +13,8 @@
 # N.B. Other directories will be ignored if a file '.nobackup' is present and '--exclude-if-present .nobackup' is used
 
 # # ALL caches
-# ! **Cache**
-# ! **cache**
+# ! **/*Cache*
+# ! **/*cache*
 
 # Cache items that will be rebuilt by the machine
 ! **/.build/
@@ -67,9 +67,9 @@
 ! **/extensions_crx_cache
 ! **/ScriptCache
 ! **/NickNameCache
-! **/Library/DuetExpertCenter/**Cache*
-! **/Library/Metadata/**Cache*
-! **/Library/Metadata/**cache*
+! **/Library/DuetExpertCenter/**/*Cache*
+! **/Library/Metadata/**/*Cache*
+! **/Library/Metadata/**/*cache*
 
 # Metadata
 ! **/.DS_Store
@@ -276,20 +276,23 @@
 ! **/renv/staging
 
 # Arc browser caches
-! **/Users/*/Library/Application Support/Arc/**Cache*
-! **/Users/*/Library/Application Support/Arc/**cache*
+! **/Users/*/Library/Application Support/Arc/**/*Cache*
+! **/Users/*/Library/Application Support/Arc/**/*cache*
 
 # Adobe caches
-! **/Users/*/Library/Application Support/Adobe/**Cache*
-! **/Users/*/Library/Application Support/Adobe/**cache*
+! **/Users/*/Library/Application Support/Adobe/**/*Cache*
+! **/Users/*/Library/Application Support/Adobe/**/*cache*
 
 # SPSS caches
-! **/Users/*/Library/Application Support/IBM/**Cache*
-! **/Users/*/Library/Application Support/IBM/**cache*
+! **/Users/*/Library/Application Support/IBM/**/*Cache*
+! **/Users/*/Library/Application Support/IBM/**/*cache*
 
 # vscode caches
-! **/Users/*/Library/Application Support/Code/**Cache*
-! **/Users/*/Library/Application Support/Code/**cache*
+! **/Users/*/Library/Application Support/Code/**/*Cache*
+! **/Users/*/Library/Application Support/Code/**/*cache*
+
+# whatsapp
+! **/Users/*/Library/Group Containers/*whatsapp*
 
 # Up for discussion
 # ! **/.dropbox*
