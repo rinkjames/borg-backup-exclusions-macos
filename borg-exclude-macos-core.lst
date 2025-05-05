@@ -68,6 +68,7 @@
 ! **/ScriptCache
 ! **/NickNameCache
 ! **/Library/DuetExpertCenter/**/*Cache*
+! **/Library/DuetExpertCenter/**/*cache*
 ! **/Library/Metadata/**/*Cache*
 ! **/Library/Metadata/**/*cache*
 
