@@ -207,3 +207,121 @@
 # ! /Volumes/			 #
 # ! ~/Library/Containers	 #
 ##################################
+# These are exclusions for borg backup which are particular to certain macOS applications
+# Use: borg create --patterns-from=/path/to/borg-exclude-macos-applications.lst
+
+# N.B. --patterns-from uses the shell style of patterns by default NOT the fn
+# Shell style counts ** as any character (including path separators)
+
+# A directory exclusion pattern can end either with or without a slash (‘/’).
+# If it ends with a slash, such as some/path/, the directory will be included but not its content.
+# If it does not end with a slash, such as some/path, both the directory and content will be excluded.
+# A minus sign will exclude, but still recurse into the directory to find inclusions (slow)
+# A bang/exclamation point will _not_ recurse into a directory, and thus no inclusion rules will kick in (dangerous)
+
+# Adguard
+! **/com.adguard.mac.adguard/adguard.db
+
+# Anki
+! **/Anki2/*/media.trash
+
+# Arq Backup
+! **/Library/Application Support/ArqAgent/cache.noindex
+
+# Discord
+! **/discord/Code Cache
+
+# Dropbox
+
+# Flume
+! **/Flume/ImageCache
+
+# Google Chrome
+! **/Google/Chrome/Default/Service Worker/CacheStorage
+! **/Google/Chrome/Default/Service Worker/ScriptCache
+! **/Google/Chrome/ShaderCache
+
+# Google drive
+! **/.tmp.drivedownload
+! **/.tmp.driveupload
+! **/Users/*/Library/Application Support/Google/DriveFS
+
+# Microsoft App Center Telemetry
+! **/Application Support/**/com.microsoft.appcenter/
+
+# Microsoft office
+! **/Microsoft/FontPreviewCache
+! **/~$*
+
+# Spotify
+! **/Spotify/PersistentCache
+
+# Zotero
+! **/Users/*/Zotero/storage
+
+# Crossover
+! **/Users/*/Library/Application Support/CrossOver/Bottles
+! **/Users/*/Applications/Crossover
+
+# Parallels
+! **/Users/*/Applications (Parallels)
+! **/Users/*/Parallels
+! **/Users/*/Library/Parallels/Downloads
+
+# R renv library
+! **/renv/library
+! **/renv/local
+! **/renv/lock
+! **/renv/python
+! **/renv/staging
+
+# Arc browser caches
+! **/Users/*/Library/Application Support/Arc/**Cache*
+! **/Users/*/Library/Application Support/Arc/**cache*
+
+# Adobe caches
+! **/Users/*/Library/Application Support/Adobe/**Cache*
+! **/Users/*/Library/Application Support/Adobe/**cache*
+
+# SPSS caches
+! **/Users/*/Library/Application Support/IBM/**Cache*
+! **/Users/*/Library/Application Support/IBM/**cache*
+
+# vscode caches
+! **/Users/*/Library/Application Support/Code/**Cache*
+! **/Users/*/Library/Application Support/Code/**cache*
+
+# Up for discussion
+# ! **/.dropbox*
+# These are exclusion patterns for borg backup relevant to programming and to macOS
+# Use: borg create --patterns-from="/path/to/borg-exclude-macos-programming.lst"
+
+# N.B. --patterns-from uses the shell style of patterns by default NOT the fn
+# Shell style counts ** as any character (including path separators)
+
+# A directory exclusion pattern can end either with or without a slash (‘/’).
+# If it ends with a slash, such as some/path/, the directory will be included but not its content.
+# If it does not end with a slash, such as some/path, both the directory and content will be excluded.
+# A minus sign will exclude, but still recurse into the directory to find inclusions (slow)
+# A bang/exclamation point will _not_ recurse into a directory, and thus no inclusion rules will kick in (dangerous)
+
+# N.B. Other directories will be ignored if a file '.nobackup' is present and '--exclude-if-present .nobackup' is used
+
+# Cache items
+! **/__pycache__
+
+# Packages
+! **/.npm
+! **/node_modules
+
+# Git repos
+! **/.git
+! **/.gvfs
+
+################################
+# Exclusions up for discussion #
+# *.pyc			       #
+# ! **/build/		       #
+# ! **/dist/		       #
+# ! **/vendor/		       #
+################################

@@ -35,6 +35,7 @@
 # Google drive
 ! **/.tmp.drivedownload
 ! **/.tmp.driveupload
+! **/Users/*/Library/Application Support/Google/DriveFS
 
 # Microsoft App Center Telemetry
 ! **/Application Support/**/com.microsoft.appcenter/
@@ -50,20 +51,36 @@
 ! **/Users/*/Zotero/storage
 
 # Crossover
-! **/Users/*/Library/Application Support/CrossOver/Bottles/
+! **/Users/*/Library/Application Support/CrossOver/Bottles
 ! **/Users/*/Applications/Crossover
 
-$ Parallels
+# Parallels
 ! **/Users/*/Applications (Parallels)
 ! **/Users/*/Parallels
 ! **/Users/*/Library/Parallels/Downloads
 
 # R renv library
-! **/renv/library/
-! **/renv/local/
-! **/renv/lock/
-! **/renv/python/
-! **/renv/staging/
+! **/renv/library
+! **/renv/local
+! **/renv/lock
+! **/renv/python
+! **/renv/staging
+
+# Arc browser caches
+! **/Users/*/Library/Application Support/Arc/**Cache*
+! **/Users/*/Library/Application Support/Arc/**cache*
+
+# Adobe caches
+! **/Users/*/Library/Application Support/Adobe/**Cache*
+! **/Users/*/Library/Application Support/Adobe/**cache*
+
+# SPSS caches
+! **/Users/*/Library/Application Support/IBM/**Cache*
+! **/Users/*/Library/Application Support/IBM/**cache*
+
+# vscode caches
+! **/Users/*/Library/Application Support/Code/**Cache*
+! **/Users/*/Library/Application Support/Code/**cache*
 
 # Up for discussion
 # ! **/.dropbox*
