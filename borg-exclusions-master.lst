@@ -93,7 +93,7 @@
 ! **/.DocumentRevisions-V100/
 
 # Dynamically-generated devices
-! /Volumes/
+# ! /Volumes/
 ! /dev/
 ! /automount
 ! /Network
