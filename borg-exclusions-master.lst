@@ -169,6 +169,11 @@
 - /run/
 - /sys/
 - /var/backups/
+
+# permission error
+! **/Library/Application Support/FileProvider/**/wharf/tombstone/
+
+# Library folders
 ! **/Library/Assistant
 ! **/Library/Biome
 ! **/Library/Containers/com.apple.suggestions
