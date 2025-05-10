@@ -67,8 +67,6 @@
 ! **/extensions_crx_cache
 ! **/ScriptCache
 ! **/NickNameCache
-! **/Library/DuetExpertCenter/**/*Cache*
-! **/Library/DuetExpertCenter/**/*cache*
 ! **/Library/Metadata/**/*Cache*
 ! **/Library/Metadata/**/*cache*
 
@@ -114,10 +112,10 @@
 
 # Things deleted by user (these should have been picked up in an earlier backup anyway)
 # N.B. Omitting the trashes will leave you open to creating something, trashing it before a backup is made, and then having a disaster
-! **/.trash/
-! **/.Trash/
-! **/.trashes/
-! **/.Trashes/
+! **/.trash
+! **/.Trash
+! **/.trashes
+! **/.Trashes
 ! **/$RECYCLE.BIN
 
 # Logs and Monitoring
@@ -171,6 +169,50 @@
 - /run/
 - /sys/
 - /var/backups/
+! **/Library/Assistant
+! **/Library/Biome
+! **/Library/Containers/com.apple.suggestions
+! **/Library/DoNotDisturb
+! **/Library/DuetExpertCenter
+! **/Library/Group Containers/*com.flexibits.fantastical2.mac
+! **/Library/Group Containers/*com.microsoft.teams
+! **/Library/Group Containers/*com.1password
+! **/Library/Group Containers/*group.com.google.drivefs
+! **/Library/Group Containers/group.com.apple.accessibility.voicebanking
+! **/Library/Group Containers/group.com.apple.AppleSpell
+! **/Library/Group Containers/group.com.apple.calendar
+! **/Library/Group Containers/group.com.apple.chronod
+! **/Library/Group Containers/group.com.apple.coreservices.useractivityd
+! **/Library/Group Containers/group.com.apple.feedbacklogger
+! **/Library/Group Containers/group.com.apple.FileProviderDomainCaching
+! **/Library/Group Containers/group.com.apple.notes
+! **/Library/Group Containers/group.com.apple.PegasusConfiguration
+! **/Library/Group Containers/group.com.apple.reminders
+! **/Library/Group Containers/group.com.apple.secure-control-center-preferences
+! **/Library/Group Containers/group.com.apple.shortcuts
+! **/Library/Group Containers/group.com.apple.siri*
+! **/Library/Group Containers/group.com.apple.spotlight
+! **/Library/Group Containers/group.com.apple.tips
+! **/Library/Group Containers/group.com.apple.transparency
+! **/Library/Group Containers/group.com.apple.usernotd
+! **/Library/Group Containers/group.com.apple.weather
+! **/Library/Group Containers/group.com.apple.tipquality.feedbacklearning
+! **/Library/homeenergyd
+! **/Library/HTTPStorages
+! **/Library/IntelligencePlatform
+! **/Library/LanguageModeling
+! **/Library/PersonalizationPortrait
+! **/Library/Sharing
+! **/Library/Spelling
+! **/Library/StatusKit
+! **/Library/studentd
+! **/Library/Suggestions
+! **/Library/WebKit
+! **/Library/com.apple.aiml.instrumentation
+! **/Library/com.apple.assistant
+! **/Library/com.apple.bluetooth.services.cloud
+! **/Library/com.apple.bluetoothtouser
+! **/Library/com.apple.cloud.searchpartyd
 
 # icloud libraries
 ! **/Users/*/Music/Music/Music Library.musiclibrary

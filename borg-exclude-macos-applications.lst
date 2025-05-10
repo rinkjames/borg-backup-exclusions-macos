@@ -48,7 +48,7 @@
 ! **/Spotify/PersistentCache
 
 # Zotero
-! **/Users/*/Zotero/storage
+# ! **/Users/*/Zotero/storage
 
 # Crossover
 ! **/Users/*/Library/Application Support/CrossOver/Bottles
@@ -66,10 +66,6 @@
 ! **/renv/python
 ! **/renv/staging
 
-# Arc browser caches
-! **/Users/*/Library/Application Support/Arc/**/*Cache*
-! **/Users/*/Library/Application Support/Arc/**/*cache*
-
 # Adobe caches
 ! **/Users/*/Library/Application Support/Adobe/**/*Cache*
 ! **/Users/*/Library/Application Support/Adobe/**/*cache*
@@ -84,6 +80,9 @@
 
 # whatsapp
 ! **/Users/*/Library/Group Containers/*whatsapp*
+
+# Arc browser
+! **/Users/*/Library/Application Support/Arc
 
 # Up for discussion
 # ! **/.dropbox*
