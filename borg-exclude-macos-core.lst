@@ -227,6 +227,10 @@
 # cloud storage
 ! **/Users/*/Library/CloudStorage
 
+# media folders
+! **/Users/*/Movies
+! **/Users/*/Music
+
 ##################################
 # Exclusions up for discussion	 #
 # ! **/*~			 #
